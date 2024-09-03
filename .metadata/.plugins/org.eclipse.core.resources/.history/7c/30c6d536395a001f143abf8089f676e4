@@ -1,0 +1,23 @@
+package com.Bubblesort;
+
+public class Demo {
+	
+	public static void main(String args[]) {
+		
+		int nums[] = {9,8,6,5,2,4,3};
+		
+		
+		System.out.println("Before Sorting");
+		
+		for(int num : nums) {
+			System.out.print(num + " ");
+		}
+		
+//		System.out.println();
+		System.out.print("After sorting");
+		for(int num : nums) {
+			System.out.println(num + " ");
+		}
+	}
+
+}

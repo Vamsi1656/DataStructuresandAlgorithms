@@ -1,0 +1,24 @@
+package com.Selectionsort;
+
+public class Demo {
+	
+	public static void main(String args[]) {
+		
+		int nums[] = {9,8,6,5,7,4,3};
+		int temp=0;
+		
+		System.out.println("Before Sorting");
+		
+		for(int num : nums) {
+			System.out.print(num + " ");
+		}
+		
+		
+		System.out.println();
+		System.out.println("After sorting");
+		for(int num : nums) {
+			System.out.print(num + " ");
+		}
+	}
+
+}
