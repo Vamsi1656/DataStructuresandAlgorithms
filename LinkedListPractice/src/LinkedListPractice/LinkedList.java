@@ -1,5 +1,6 @@
 package LinkedListPractice;
 
+
 public class LinkedList {
 	
 	Node head;
@@ -23,6 +24,55 @@ public class LinkedList {
 			n.next=node;
 		}
 	}
+	
+	
+	public void insertStartAt(int data)
+	{
+		Node node=new Node();
+		node.data=data;
+		node.next=null;
+		node.next=head;
+		
+		head=node;
+	}
+	
+	
+	public void insertAt(int index,int data)
+	{
+		Node node=new Node();
+		node.data=data;
+		node.next=null;
+		
+		if(index==0)
+		{
+			insertStartAt(data);
+		}
+		else {
+	    	Node n = head;
+	    	for(int i=0;i<index-1;i++) {
+	    		n=n.next;
+	    	}
+	    	node.next=n.next;
+	    	n.next=node;
+		}
+	}
+	
+	 public void deleteAt(int index) 
+	    {
+	    	if(index==0) {
+	    		head=head.next;
+	    	}
+	    	else {
+	    		Node n = head;
+	    		Node n1=null;
+	        	for(int i=0;i<index-1;i++) {
+	        		n=n.next;
+	        	}
+	        	n1=n.next;
+	        	n.next=n1.next;
+	        	System.out.println("n1 " + n1.data);
+	    	}
+	    }
 	
 	public void show()
 	{

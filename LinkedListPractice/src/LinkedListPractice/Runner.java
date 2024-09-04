@@ -11,6 +11,11 @@ public class Runner {
 	list.insert(11);
 	list.insert(66);
 	
+	list.insertStartAt(25);
+	
+	list.insertAt(3, 85);
+	
+	list.deleteAt(5);
 	
 	list.show();
 	}
