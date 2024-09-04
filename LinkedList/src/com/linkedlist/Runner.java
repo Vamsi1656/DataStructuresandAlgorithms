@@ -8,7 +8,10 @@ public class Runner {
 		list.insert(18);
 		list.insert(45);
 		list.insert(7);
+		list.insertStartAt(25);
 		
+		list.insertAt(0, 77);
+		list.deleteAt(2);
 		list.show();
 		
 		
