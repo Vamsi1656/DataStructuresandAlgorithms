@@ -73,7 +73,7 @@ public class LinkedList {
 	        	System.out.println("n1 " + n1.data);
 	    	}
 	    }
-	
+	 
 	public void show()
 	{
 		Node node=head;
